@@ -13,3 +13,12 @@
 .project-page-heading{padding:40px 0}.project-copy h1{font-size:48px;line-height:1.08;margin-bottom:26px}.project-copy h1 .serif{display:block;color:var(--accent)}nav [aria-current=page]{color:var(--accent)}
 @media(max-width:900px){.project-copy h1{font-size:39px}}
 @media(max-width:650px){.project-copy h1{font-size:43px}.project-page-heading{padding:28px 0}nav{gap:14px}nav a[href="index.html#about"]{display:none}}
+
+/* Story sections extend the existing two-column architecture layout. */
+.story-section{display:grid;grid-template-columns:1fr 1fr;gap:80px;border-top:1px solid var(--line);padding:60px 0}.story-section h2{font-size:clamp(30px,3.3vw,42px);line-height:1.2}.story-copy p{font-size:15px}.story-copy p:last-child{margin-bottom:0}.evolution{padding-bottom:55px}.timeline{list-style:none;display:grid;grid-template-columns:repeat(4,1fr);padding:0;margin:12px 0 20px;border-top:1px solid var(--line);border-left:1px solid var(--line)}.timeline li{position:relative;border-right:1px solid var(--line);border-bottom:1px solid var(--line);padding:25px;min-width:0}.timeline li>span{display:block;font:11px var(--mono);color:var(--accent);margin-bottom:20px}.timeline h3{font-size:20px;line-height:1.3;min-height:52px;margin-bottom:12px}.timeline p{font-size:13px;margin-bottom:0}.timeline-next{background:var(--panel)}.evolution>.small-note{font-size:12px;margin:0}.work:has(+ #origin){padding-bottom:55px}
+@media(max-width:900px){.story-section{gap:40px}.timeline{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:650px){.story-section{grid-template-columns:1fr;gap:12px;padding:40px 0}.story-section h2{font-size:30px;margin-bottom:12px}.story-section h2 br{display:none}.timeline li{padding:20px 16px}.timeline h3{font-size:18px;min-height:70px}.timeline p{font-size:12px}.evolution{padding-bottom:35px}.work:has(+ #origin){padding-bottom:35px}}
+
+.evolution-notes{max-width:720px;margin-top:28px}.evolution-notes p{font-size:15px}.story-list{padding-left:20px;color:var(--muted);font-size:15px;line-height:1.75}.story-list li{margin-bottom:10px}
+
+.timeline-next{grid-column:1 / -1}.timeline-next h3{min-height:0}
