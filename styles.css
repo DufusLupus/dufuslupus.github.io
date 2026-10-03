@@ -8,3 +8,8 @@
 
 /* Keep the complete recording visible and leave room for native controls. */
 #particle-video{position:absolute;inset:58px 0 55px;width:100%;height:calc(100% - 113px);object-fit:contain;background:#0b1110}.art-label{pointer-events:none}.art-caption a{text-decoration:underline;text-underline-offset:3px}
+
+/* Dedicated project page, using the same layout and typography as the home page. */
+.project-page-heading{padding:40px 0}.project-copy h1{font-size:48px;line-height:1.08;margin-bottom:26px}.project-copy h1 .serif{display:block;color:var(--accent)}nav [aria-current=page]{color:var(--accent)}
+@media(max-width:900px){.project-copy h1{font-size:39px}}
+@media(max-width:650px){.project-copy h1{font-size:43px}.project-page-heading{padding:28px 0}nav{gap:14px}nav a[href="index.html#about"]{display:none}}

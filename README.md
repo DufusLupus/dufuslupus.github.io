@@ -1,6 +1,6 @@
 # Killian — developer portfolio
 
-A source-led portfolio for Killian, featuring his independently designed and implemented Particle Life Simulation. Plain HTML, CSS and JavaScript, with no paid tooling, runtime dependencies or build step.
+A portfolio for Killian, featuring his independently designed and implemented Particle Life Simulation. Plain HTML, CSS and JavaScript, with no paid tooling, runtime dependencies or build step.
 
 Target URL: **https://DufusLupus.github.io/**
 
@@ -12,7 +12,7 @@ Open `index.html` directly in a browser, or use the included local server with N
 node scripts/serve.mjs
 ```
 
-Visit http://127.0.0.1:4173. Stop the server with Ctrl+C. Edit `index.html`, `styles.css` or `script.js` and refresh. The server binds only to localhost and serves HTML/CSS/JS/SVG/MP4 assets.
+Visit http://127.0.0.1:4173. Stop the server with Ctrl+C. Edit `index.html`, `particle-life.html`, `styles.css` or `script.js` and refresh. The server binds only to localhost and serves HTML/CSS/JS/SVG/MP4 assets.
 
 ## GitHub Pages deployment
 
@@ -44,11 +44,10 @@ The featured video is a recording from the Particle Sim README, stored locally a
 
 System fonts, responsive layouts, a skip link, visible keyboard focus, semantic headings, reduced-motion support and native buttons keep the page accessible and lightweight. The full written case study and source links work without JavaScript; JavaScript adds the grid-stage controls. The video works without JavaScript.
 
-## Evidence and claim boundaries
+## Pages
 
-See [docs/source-review.md](docs/source-review.md) for the inspected revision, source map and limitations. Source links are pinned in the HTML, so they remain useful without JavaScript. Reinspect the implementation before changing claims or updating the revision.
-
-No FPS, speedup, maximum particle count, cross-browser determinism, full-engine correctness or completed benchmark validation is claimed.
+- `index.html`: general introduction, featured project, about, future projects and CV placeholder.
+- `particle-life.html`: dedicated project story, architecture and interactive grid explanation.
 
 ## Updating the portfolio
 
