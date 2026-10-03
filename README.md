@@ -1,6 +1,6 @@
 # Killian — developer portfolio
 
-A source-led portfolio for Killian, featuring his independently designed and implemented Particle Life Simulation. Plain HTML, CSS and JavaScript, with no paid tooling, third-party requests, runtime dependencies or build step.
+A source-led portfolio for Killian, featuring his independently designed and implemented Particle Life Simulation. Plain HTML, CSS and JavaScript, with no paid tooling, runtime dependencies or build step.
 
 Target URL: **https://DufusLupus.github.io/**
 
@@ -12,7 +12,7 @@ Open `index.html` directly in a browser, or use the included local server with N
 node scripts/serve.mjs
 ```
 
-Visit http://127.0.0.1:4173. Stop the server with Ctrl+C. Edit `index.html`, `styles.css` or `script.js` and refresh. The server binds only to localhost and serves HTML/CSS/JS/SVG assets.
+Visit http://127.0.0.1:4173. Stop the server with Ctrl+C. Edit `index.html`, `styles.css` or `script.js` and refresh. The server binds only to localhost and serves HTML/CSS/JS/SVG/MP4 assets.
 
 ## GitHub Pages deployment
 
@@ -40,9 +40,9 @@ This workspace was already an empty Git repository with `origin` pointing to `ht
 - Architecture: ordered frame pipeline and an interactive count → prefix sum → scatter explanation.
 - About, an explicitly unavailable future CV, and a placeholder for additional projects.
 
-The canvas is an original static generative illustration, **not a Particle Life screenshot or live simulation**. It redraws only on resize. The grid example uses explanatory data rather than executing the engine. Neither requires SharedArrayBuffer or cross-origin isolation. The original project is linked rather than embedded; no changes were made to it.
+The featured video is a recording from the Particle Sim README, stored locally as `assets/particle-life.mp4` (about 1.4 MB). Native video controls, muted playback, inline playback and metadata-only preloading keep it usable without automatically playing or downloading the whole recording. The grid example uses explanatory data rather than executing the engine. Neither requires SharedArrayBuffer or cross-origin isolation. No changes were made to the original project.
 
-System fonts, responsive layouts, a skip link, visible keyboard focus, semantic headings, reduced-motion support and native buttons keep the page accessible and lightweight. The full written case study and source links work without JavaScript; JavaScript adds the decorative illustration and grid-stage controls.
+System fonts, responsive layouts, a skip link, visible keyboard focus, semantic headings, reduced-motion support and native buttons keep the page accessible and lightweight. The full written case study and source links work without JavaScript; JavaScript adds the grid-stage controls. The video works without JavaScript.
 
 ## Evidence and claim boundaries
 
@@ -55,7 +55,7 @@ No FPS, speedup, maximum particle count, cross-browser determinism, full-engine 
 - **CV:** add a PDF, then replace the placeholder with a descriptive download link. Do not expose a download button until the file exists.
 - **Projects:** replace the future-project placeholder with an actual case study and source links.
 - **Contact:** GitHub is the supplied contact channel. Add an email only when Killian provides one.
-- **Visual:** replace the labeled canvas with a genuine capture if one becomes available; provide descriptive alternative text and sensible image dimensions.
+- **Video:** the recording comes from https://github.com/user-attachments/assets/b621fb14-c8b5-4157-82b7-b56a4f75bf6d. Replace `assets/particle-life.mp4` if you want to use a newer capture.
 
 ## Verification
 
