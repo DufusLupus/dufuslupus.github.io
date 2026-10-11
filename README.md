@@ -38,7 +38,7 @@ This workspace was already an empty Git repository with `origin` pointing to `ht
 - Featured project: Particle Life, with GitHub/source links.
 - Particle Life story: origin, visual evolution timeline, getting it parallel, runtime settings, lessons, benchmarking rebuild and WebGPU plans.
 - Architecture: ordered frame pipeline and an interactive count → prefix sum → scatter explanation.
-- General home page with an about section, future CV and additional-project placeholders.
+- General home page with an about section.
 
 The featured video is a recording from the Particle Sim README, stored locally as `assets/particle-life.mp4` (about 1.4 MB). Native video controls, muted playback, inline playback and metadata-only preloading keep it usable without automatically playing or downloading the whole recording. The grid example uses explanatory data rather than executing the engine. Neither requires SharedArrayBuffer or cross-origin isolation. No changes were made to the original project.
 
@@ -46,18 +46,18 @@ System fonts, responsive layouts, a skip link, visible keyboard focus, semantic 
 
 ## Pages
 
-- `index.html`: general introduction, featured project, about, future projects and CV placeholder.
+- `index.html`: general introduction, featured project and about.
 - `particle-life.html`: dedicated project story, architecture and interactive grid explanation.
 
 ## Updating the portfolio
 
-- **CV:** add a PDF, then replace the placeholder with a descriptive download link. Do not expose a download button until the file exists.
-- **Projects:** replace the future-project placeholder with an actual case study and source links.
+- **CV:** add a descriptive download link when a PDF is available.
+- **Projects:** add an actual case study and source links when another project is ready.
 - **Contact:** GitHub is the supplied contact channel. Add an email only when Killian provides one.
 - **Video:** the recording comes from https://github.com/user-attachments/assets/b621fb14-c8b5-4157-82b7-b56a4f75bf6d. Replace `assets/particle-life.mp4` if you want to use a newer capture.
 
 ## Verification
 
-Run `node --check script.js` and `node --check scripts/serve.mjs`. Preview both pages at desktop and mobile sizes; check for overflow, test all grid-stage buttons, follow source links, navigate with a keyboard and confirm the CV remains clearly marked as unavailable. Disable JavaScript to check core content. No test framework or package installation is required.
+Run `node --check script.js` and `node --check scripts/serve.mjs`. Preview both pages at desktop and mobile sizes; check for overflow, test all grid-stage buttons, follow source links and navigate with a keyboard. Disable JavaScript to check core content. No test framework or package installation is required.
 
 The two-page update passed headless Chromium checks at viewport widths 1440, 1289, 768, 390 and 320 pixels: no horizontal overflow, working prefix-sum/scatter controls, no JavaScript errors, keyboard access to the skip link, and readable core content with pinned source links when JavaScript is disabled. Home and project desktop screenshots and desktop/mobile timeline screenshots were visually reviewed. Navigation between pages and playback of the actual simulation recording also passed. Browser checks used an already installed Playwright copy outside this repository; it is not a portfolio dependency. Both JavaScript syntax checks passed. The site is published through GitHub Pages.
